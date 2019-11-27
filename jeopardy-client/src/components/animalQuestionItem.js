@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AnimalQuestionItem.css';
 import ReactCardFlip from 'react-card-flip';
-
+//
 class AnimalQuestionItem extends Component {
 
     constructor() {
@@ -23,10 +23,10 @@ class AnimalQuestionItem extends Component {
         this.setState({ answer: '' })
         if (data === true) {
             this.setState({ answer: 'Correct' });
-            this.setState({ color: 'BackCorrect'})
+            this.setState({ color: 'BackCorrect' })
         } else {
             this.setState({ answer: 'Incorrect' })
-            this.setState({ color: 'BackWrong'})
+            this.setState({ color: 'BackWrong' })
         }
     }
 
