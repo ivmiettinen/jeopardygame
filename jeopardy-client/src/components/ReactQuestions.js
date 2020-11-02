@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactQuestionItem from './ScienceQuestionItem';
+import ReactQuestionItem from './ReactQuestionItem';
 
 
 
