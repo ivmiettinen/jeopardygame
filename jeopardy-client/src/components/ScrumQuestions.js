@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import HistoryQuestionItem from './HistoryQuestionItem';
-import './HistoryQuestions.css';
+import ScrumQuestionItem from './ScrumQuestionItem';
 
-class HistoryQuestions extends Component {
+
+class ScrumQuestions extends Component {
 
     state = {
         historyQuestions: []
@@ -20,7 +20,7 @@ class HistoryQuestions extends Component {
     render() {
         const historyItem = this.state.historyQuestions
         .map((question) =>{
-            return <HistoryQuestionItem data = {question} key = {question.id}/>
+            return <ScrumQuestionItem data = {question} key = {question.id}/>
         } )
         return (
             <div className="MainDiv">
@@ -30,4 +30,4 @@ class HistoryQuestions extends Component {
     }
 }
 
-export default HistoryQuestions;
+export default ScrumQuestions;

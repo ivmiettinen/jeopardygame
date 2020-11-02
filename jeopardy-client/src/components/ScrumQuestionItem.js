@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './AnimalQuestionItem.css';
+import './ScrumQuestionItem.css';
 import ReactCardFlip from 'react-card-flip';
-//
-class AnimalQuestionItem extends Component {
 
+class ScrumQuestionItem extends Component {
     constructor() {
         super();
         this.state = {
@@ -20,15 +19,15 @@ class AnimalQuestionItem extends Component {
     }
 
     check(data) {
-        this.setState({ answer: '' })
         if (data === true) {
-            this.setState({ answer: 'Correct' });
-            this.setState({ color: 'BackCorrect' })
+            this.setState({ answer: 'Correct' })
+            this.setState({color: 'BackCorrect'})
         } else {
-            this.setState({ answer: 'Incorrect' })
-            this.setState({ color: 'BackWrong' })
+            this.setState({answer: 'Incorrect' })
+            this.setState({color: 'BackWrong'})
         }
     }
+
 
     render() {
 
@@ -46,7 +45,7 @@ class AnimalQuestionItem extends Component {
 
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal" key={id}>
-                <div className="Front3" id={id}>
+                <div className="Front2" id={id}>
                     <h3>{title}</h3>
                     <p onClick={() => this.check(result1)}>{title1} <button value={result1} onClick={this.handleClick}>Select</button></p>
                     <p onClick={() => this.check(result2)}>{title2} <button value={result2} onClick={this.handleClick}>Select</button></p>
@@ -65,4 +64,4 @@ class AnimalQuestionItem extends Component {
     }
 }
 
-export default AnimalQuestionItem;
+export default ScrumQuestionItem;

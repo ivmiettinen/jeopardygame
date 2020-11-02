@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './ScienceQuestionItem.css';
+import './ReactQuestionItem.css';
 import ReactCardFlip from 'react-card-flip';
 
 
-class ScienceQuestionItem extends Component {
+class ReactQuestionItem extends Component {
 
 
     constructor() {
@@ -66,15 +66,6 @@ class ScienceQuestionItem extends Component {
     }
 }
 
-export default ScienceQuestionItem;
+export default ReactQuestionItem;
 
 
-
-// <Front data={this.props.data}>
-// <button onClick={this.handleClick}>Click to flip</button>
-//     </Front>
-
-
-//     <Back data={this.props.data}>
-// <button onClick={this.handleClick}>Click to flip</button>
-//     </Back>

@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import AnimalQuestions from './AnimalQuestions';
-import './AnimalQuestions.css';
-import HistoryQuestions from './HistoryQuestions';
-import './HistoryQuestions.css';
+import GitQuestions from './GitQuestions';
+
+import ScrumQuestions from './ScrumQuestions';
+
 import NavBar from './NavBar';
-import ScienceQuestions from './ScienceQuestions';
+import ReactQuestions from './ReactQuestions';
 
 
 class MainContainer extends Component {
     render() {
         return (
-            <div>
+            <div>   
                 <NavBar />
-                <ScienceQuestions />
-                <HistoryQuestions />
-                <AnimalQuestions />
+                <ReactQuestions />
+                <ScrumQuestions />
+                <GitQuestions />
             </div>
         );
     }

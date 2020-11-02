@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './ScienceQuestions.css';
-import ScienceQuestionItem from './ScienceQuestionItem';
+import ReactQuestionItem from './ScienceQuestionItem';
 
 
 
-class ScienceQuestions extends Component {
+class ReactQuestions extends Component {
 
     state = {
         scienceQuestions: []
@@ -19,7 +18,7 @@ class ScienceQuestions extends Component {
     render() {
         const scienceItem = this.state.scienceQuestions
         .map((question) =>{
-            return <ScienceQuestionItem data = {question} key={question.id}/>
+            return <ReactQuestionItem data = {question} key={question.id}/>
         } )
         return (
             <div className="MainDiv">
@@ -29,4 +28,4 @@ class ScienceQuestions extends Component {
     }
 }
 
-export default ScienceQuestions;
+export default ReactQuestions;

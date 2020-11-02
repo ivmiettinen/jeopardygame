@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import AnimalQuestionItem from './AnimalQuestionItem';
-import './AnimalQuestions.css';
+import GitQuestionItem from './GitQuestionItem';
 
-class AnimalQuestions extends Component {
+
+class GitQuestions extends Component {
   state = {
     animalQuestions: []
   };
@@ -16,11 +16,11 @@ class AnimalQuestions extends Component {
 
   render() {
     const animalItem = this.state.animalQuestions.map(question => {
-      return <AnimalQuestionItem data={question} key={question.id} />;
+      return <GitQuestionItem data={question} key={question.id} />;
     });
 
     return <div className='MainDiv'>{animalItem}</div>;
   }
 }
 
-export default AnimalQuestions;
+export default GitQuestions;
