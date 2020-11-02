@@ -1,0 +1,65 @@
+.MainDiv {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    float: right;
+    height: 100vh;
+}
+
+.Back {
+      min-height: 320px;
+      max-height: 320px;
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      background-blend-mode: lighten;
+      border-style: inset;
+      border-radius: 40px;
+      }
+      
+ .Front2 {
+    min-height: 320px;
+    max-height: 320px;
+    background-image: url("https://yt3.ggpht.com/a/AGF-l78UCQ9xvX-TJZbmb1kj_k-cxJKl1W3WSQfLiQ=s900-c-k-c0xffffffff-no-rj-mo");
+    filter: grayscale();
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    background-blend-mode: lighten;
+    border-style: inset;
+    border-radius: 40px;
+  }
+
+
+  .BackCorrect {
+    min-height: 320px;
+    max-height: 320px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: green;
+    background-blend-mode: lighten;
+    border-style: inset;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+
+  .BackWrong {
+    min-height: 320px;
+    max-height: 320px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    background-blend-mode: lighten;
+    border-style: inset;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
